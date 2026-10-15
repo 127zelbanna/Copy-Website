@@ -7,16 +7,25 @@
 </head>
 <link rel = "stylesheet" href = "style.css">
 <body>
-    <div>
-        <a onclick="closeOpen()" id="hamburger"> ≣ </a>
+
+    <div id="sideBar" style="display:block">
+        <h4><a> Computer Science <br> Magnet Program <br> Freehold High School</a></h4>
+        <p> <a href="#offered" onclick="courses()">Courses in the Program</a> </p>
+        <div id="coursesSide">
+            <p> <a href="#apmeow">AP Computer Science Principles</a> </p>
+            <p> <a href="#meow">AP Computer Science A</a> </p>
+            <p> <a href="#dsa">Honors Data Structures and Algorithms</a> </p>
+            <p> <a href="#cssc">Honors Computer Science Senior Capstone: Web, Data, and AI</a> </p>
+            <p> <a href="#dmc">Honors Discrete Math and Cybersecurity</a> </p>
+        </div>
+        <p> <a href="#extra">Extracurricular Opportunities</a> </p>
+        <p> <a href="#colllege"> Where our students have gone </a></p>
     </div>
-    <div id="sideBar">
-        <h4>Computer Science Magnet Program</h4>
-        <p> Freehold High School </p>
-        <p> Courses in the Program </p>
-        <p> Extracurricular Opportunities </p>
-        <p> Where our students have gone </p>
+
+    <div id="hamburger">
+        <button onclick="closeOpen()"> ≣ </button>
     </div>
+
     <div class="main">
         <h1> Computer Science Magnet Program </h1>
 
@@ -28,9 +37,9 @@
             <img id="carImage" src="https://i.ytimg.com/vi/CxGSnA-RTsA/hqdefault.jpg">
             <a onclick = "rightClick()" id="rightButton"> → </a>
         </div>
-        <h2 id="1"> Courses Offered in the Program </h2>
+        <h2 id="offered"> Courses Offered in the Program </h2>
         <p>The following courses are program specific courses that all students in the program take. Click on a course name to get the official curriculum document.</p>
-        <div>
+        <div id="apmeow">
             <h3><a href="https://docs.google.com/document/d/1fe8WqC-8ANao3NeNtd517elGpjtQd-Mb7myZg2J4xYY/edit?tab=t.0" target="_blank" rel="noopener noreferrer">AP Computer Science Principles</a></h3>
             <a onclick="apscp()" id="apcsp"> <img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5O3sc1bqUAe1XG8LBYb8_gLjGo7YBRGk4uCpZYdX8fg&s=10 " alt=""></a>
         </div>
@@ -39,14 +48,15 @@
         <div id="meow">
             <h3><a href="https://docs.google.com/document/d/1HQrQpz4c7BPawGUj5knEQYSd88lH2uRgwz2KuLSGBWw/edit?tab=t.0#heading=h.gjdgxs" target="_blank" rel="noopener noreferrer">AP Computer Science A</a></h3>
             <a onclick="apsca()" id="apcsa"> <img width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5O3sc1bqUAe1XG8LBYb8_gLjGo7YBRGk4uCpZYdX8fg&s=10 " alt=""></a>
-        </div><p>Sophomores advance to AP Computer Science A, which provides a rigorous introduction to object-oriented programming and software development using the Java programming language. Students design, implement, test, and analyze programs while developing their understanding of data structures, algorithms, abstraction, and problem solving. The course emphasizes writing effective code and applying programming concepts to increasingly complex problems.</p>
-        <h3><a href="https://docs.google.com/document/d/1EKe8ApCdyGswZcFHimbYrD_YyvYTdRvnyIlS0eeZWWc/edit?tab=t.0#heading=h.gjdgxs" target="_blank" rel="noopener noreferrer">Honors Data Structures and Algorithms</a></h3>
+        </div>
+        <p>Sophomores advance to AP Computer Science A, which provides a rigorous introduction to object-oriented programming and software development using the Java programming language. Students design, implement, test, and analyze programs while developing their understanding of data structures, algorithms, abstraction, and problem solving. The course emphasizes writing effective code and applying programming concepts to increasingly complex problems.</p>
+        <h3 id="dsa"><a href="https://docs.google.com/document/d/1EKe8ApCdyGswZcFHimbYrD_YyvYTdRvnyIlS0eeZWWc/edit?tab=t.0#heading=h.gjdgxs" target="_blank" rel="noopener noreferrer">Honors Data Structures and Algorithms</a></h3>
         <p>Juniors take Data Structures & Algorithms, where students build upon their programming foundation and explore more advanced approaches to organizing, processing, and analyzing information. Students study data structures, algorithm design and efficiency, searching and sorting techniques, recursion, and computational problem-solving while applying these concepts through substantial programming projects. The course challenges students to think critically about not only whether a solution works, but also how effectively and efficiently it works.</p>
-        <h3><a href="https://docs.google.com/document/d/1VPM1zYZzSlGkjDre80V5IrqwnBAaFGxt4L4tO11R1X0/edit?tab=t.0#heading=h.gjdgxs" target="_blank" rel="noopener noreferror">Honors Computer Science Senior Capstone: Web, Data, and AI</a></h3>
+        <h3 id="cssc"><a href="https://docs.google.com/document/d/1VPM1zYZzSlGkjDre80V5IrqwnBAaFGxt4L4tO11R1X0/edit?tab=t.0#heading=h.gjdgxs" target="_blank" rel="noopener noreferror">Honors Computer Science Senior Capstone: Web, Data, and AI</a></h3>
         <p>The Senior Capstone provides students with an opportunity to bring together the knowledge and skills developed throughout the four-year program. Students work individually or collaboratively to identify a meaningful problem or opportunity and design, develop, test, and present a technology-based solution. Capstone projects may incorporate procedural generation, databases and data analysis, machine learning and artificial intelligence, cybersecurity, or other areas of student interest. Students are expected to document their process, evaluate their solutions, communicate their work, and reflect on the challenges and decisions involved in developing their projects. At the same time students learn web development skills for both front and back end development, database management, and the basic principles of machine learning.</p>
-        <h3><a href="https://docs.google.com/document/d/1OOcgEaf3etS67lBQ-YZ1VLIybsRjvmGBehnaR_O1wvc/edit?tab=t.0" target="_blank" rel="noopener noreferror">Honors Discrete Math and Cybersecurity</a></h3>
+        <h3 id="dmc"><a href="https://docs.google.com/document/d/1OOcgEaf3etS67lBQ-YZ1VLIybsRjvmGBehnaR_O1wvc/edit?tab=t.0" target="_blank" rel="noopener noreferror">Honors Discrete Math and Cybersecurity</a></h3>
         <p>Seniors take a course on Discrete Math and Cybersecurity. Discrete mathematics provides students with mathematical foundations relevant to computer science, including logic, sets, functions, combinatorics, graph theory, probability, and algorithmic reasoning. Students also explore cybersecurity principles and practices.</p>
-        <h2>Extracurricular Opportunities</h2>
+        <h2 id="extra">Extracurricular Opportunities</h2>
         <h3>Robotics</h3>
         <p>Our robotics club was founded by a passionate group of students in 2024. The 2025-2026 school year marked our first year of competition, with many students learning robotics from the ground up. Through self-directed learning, teamwork, and determination, students developed their technical skills while also fundraising for equipment and registration fees. We competed in three major competitions, including FIRST Tech Challenge and Botball, and earned awards at both of them. We’re building on that experience and preparing for future exciting seasons of competition.</p>
         <img src="https://upload.wikimedia.org/wikipedia/en/e/ee/FIRST_Tech_challenge_logo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original "> </img>

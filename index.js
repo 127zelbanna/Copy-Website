@@ -29,5 +29,19 @@ function carousel() {
 }
 
 function closeOpen() {
-    if (document.getElementById("sideBar").display === "") {}
+    if (document.getElementById("sideBar").style.display === "block") {
+        document.getElementById("sideBar").style.display = "none";
+        document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("hamburger").style.backgroundColor = "#1c4587";
+    } else {
+        document.getElementById("sideBar").style.display = "block";
+        document.getElementById("main").style.marginLeft = "16%";
+    }
+}
+function courses() {
+    if (document.getElementById("coursesSide").style.display === "block") {
+        document.getElementById("coursesSide").style.display = "none";
+    } else {
+        document.getElementById("coursesSide").style.display = "block";
+    }
 }

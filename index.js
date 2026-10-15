@@ -31,11 +31,12 @@ function carousel() {
 function closeOpen() {
     if (document.getElementById("sideBar").style.display === "block") {
         document.getElementById("sideBar").style.display = "none";
-        document.getElementById("main").style.marginLeft = "0%";
-        document.getElementById("hamburger").style.backgroundColor = "#1c4587";
+        document.getElementById("everything").style.display = "block";
+        document.getElementById("hamButton").style.backgroundColor = "#1c4587";
     } else {
         document.getElementById("sideBar").style.display = "block";
-        document.getElementById("main").style.marginLeft = "16%";
+        document.getElementById("everything").style.display = "grid";
+        document.getElementById("hamButton").style.backgroundColor = "gold";
     }
 }
 function courses() {
@@ -43,5 +44,14 @@ function courses() {
         document.getElementById("coursesSide").style.display = "none";
     } else {
         document.getElementById("coursesSide").style.display = "block";
+        document.getElementById("extraSides").style.display = "none";
+    }
+}
+function extras() {
+    if (document.getElementById("extraSides").style.display === "block") {
+        document.getElementById("extraSides").style.display = "none";
+    } else {
+        document.getElementById("extraSides").style.display = "block";
+        document.getElementById("coursesSide").style.display = "none";
     }
 }

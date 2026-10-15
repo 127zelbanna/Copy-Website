@@ -1,0 +1,98 @@
+body {
+    background: #1c4587;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+h1 {
+    font-size: 48px;
+}
+p {
+    font-size: 18px;
+}
+#sideBar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: auto;
+    background: gold;
+    color: black;
+    text-align: center;
+    width: 16%;
+    p:hover {
+        background-color: white;
+    }
+    display: block;
+}
+.college-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 12px;
+}
+.college {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: auto;
+    }
+    p {
+        text-align: center;
+    }
+}
+h1 {
+    font-size: 39px;
+}
+a {
+    color: white;
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    img {
+        width: 800px;
+        height: 500px;
+    }
+    a {
+        background-color: gold;
+        color: black;
+        cursor: pointer;
+    }
+}
+#apcsp {
+    cursor: pointer;
+}
+#apcsa {
+    cursor: pointer;
+}
+.meow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.compSciLeagueImages {
+    img {
+        width: 250px;
+        height: 250px;
+    }
+}
+#colllege {
+    margin-bottom: 50px;
+}
+
+.cyberImages {
+    img {
+        width: 20%;
+        height: 30%;
+    }
+}
+.main {
+    margin-left: 16%;
+}

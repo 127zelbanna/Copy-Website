@@ -1,8 +1,8 @@
 function apscp() {
-    window.open("https://apstudents.collegeboard.org/courses/ap-computer-science-principles", "_blank");
+    window.open("https://apcentral.collegeboard.org/courses/ap-computer-science-principles", "_blank");
 }
 function apsca() {
-    window.open("https://apstudents.collegeboard.org/courses/ap-computer-science-a","_blank");
+    window.open("https://apcentral.collegeboard.org/courses/ap-computer-science-a","_blank");
 }
 
 let counter = 0;
@@ -33,10 +33,14 @@ function closeOpen() {
         document.getElementById("sideBar").style.display = "none";
         document.getElementById("everything").style.display = "block";
         document.getElementById("hamButton").style.backgroundColor = "#1c4587";
+        document.getElementById("hamButton").style.opacity = "0.3";
+        document.getElementById("hamButton").style.color = "white";
     } else {
         document.getElementById("sideBar").style.display = "block";
         document.getElementById("everything").style.display = "grid";
         document.getElementById("hamButton").style.backgroundColor = "gold";
+        document.getElementById("hamButton").style.opacity = "1";
+        document.getElementById("hamButton").style.color = "black";
     }
 }
 function courses() {

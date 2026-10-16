@@ -6,9 +6,26 @@ body {
 }
 h1 {
     font-size: 48px;
+    margin-bottom: 50px;
 }
 p {
-    font-size: 18px;
+    font-size: 21px;
+    margin-bottom: 50px;
+}
+h3 {
+    font-size: 23px;
+    margin-bottom: 50px;
+}
+h2 {
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+h4 {
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+img {
+    margin-bottom: 50px;
 }
 #sideBar {
     position: sticky;
@@ -96,12 +113,6 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
 }
-.compSciLeagueImages {
-    img {
-        width: 250px;
-        height: 250px;
-    }
-}
 #colllege {
     margin-bottom: 100px;
 }
@@ -154,11 +165,31 @@ a {
     grid-column-gap: 10px;
 }
 #pat {
-
+    width: 250px;
+    height: 230px;
 }
 #boro {
-
+    width: 180px;
 }
 #rad {
-
+    width: 270px;
+    height: 200px;
+}
+#something {
+    height: 250px;
+}
+#something2 {
+    height: 250px;
+}
+#rown {
+    width: 400px;
+    height: 300px;
+}
+#monu {
+    width: 300px;
+    height: 300px;
+}
+#codeq {
+    width: 300px;
+    height: 300px;
 }
